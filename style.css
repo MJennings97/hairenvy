@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    
+   ;
+}
+
+body {
+ background-color: var(--shade3);
+ 
+}
+
+:root {
+    --shade1: #000000;
+    --shade2: #E0CEC5;
+    --shade3: #FFF4ED;
+    
+
+    --pink1: #5C0B2B;
+    --pink2: #8C1846;
+    --pink3: #9E345F;
+    --pink4: #F54C8F;
+    --pink5: #FC7EB1;
+
+
+    --offpink1: #BA728F;
+    --offpink2: #F294BA;
+   
+    
+    
+    
+    --blue1: #2B384A;
+    --blue2: #4D688C;
+    --blue3: #8FC0FF;
+    --blue4: #37D9FA;
+    --blue5: #65E2FC;
+    
+}
+
+
+/* Navigation Bar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background-color: var(--shade3);
+    overflow: hidden;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+.logo img {
+    width: 70px;
+    filter: invert(45%) sepia(91%) saturate(4523%) hue-rotate(312deg) brightness(94%) contrast(107%);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.navlink ul {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 85px;
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
+}
+
+.navlink li{
+list-style: none;
+padding: 0;
+transition: 0.5s;
+align-items: center;
+}
+
+.navlink a {
+    text-decoration: none;
+    text-align: center;
+    font-size:  20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--pink4);
+    transition: 0.5s;
+}
+
+.navlink a:hover {
+    color: var(--blue3);
+    text-decoration: underline;
+}
+
+/* End of Navigation Bar */
+
+.all-content {
+    max-width: 1920px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Top Section */
+
+.brand {
+background-image: url(images/afro-puff.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 944px;
+background-color: var(--shade3);
+background-blend-mode: multiply, darken, color-burn;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+
+;
+}
+
+.brand h1 {
+font-size: 180px;
+color: var(--pink4);
+text-shadow: 1px 1px 1px var(--blue1);
+font-family: 'Cinzel', serif;
+font-weight: 500;
+display:inline-block;
+margin-bottom: 0;
+}
+
+.brand p {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 120px;
+    margin-bottom: 0;
+}
+
+.brand div {
+    display:inline-block;
+    margin: 0 30px;
+    padding-bottom: 0;
+}
+
+.brand h2 {
+    font-size: 60px;
+    padding-top: 0;
+    text-align: center;
+    color: var(--blue4);
+text-shadow: 1px 1px 3px var(--shade1);
+font-weight: 500;
+/* position: relative;
+bottom: 50px; */
+text-transform: capitalize;
+}
+/* End of Top Section */
+
+
+
+/* Middle Section */
+.bestseller {
+background-color: var(--shade3);
+border-top:1px solid rgb(209, 209, 209);
+border-bottom:1px solid rgb(209, 209, 209);
+}
+
+.bestseller h2 {
+    display: inline-block;
+    font-family: 'cinzel',serif;
+    font-size: 100px;
+    text-align: center;
+    padding: 50px;
+    color: var(--pink2);
+    
+}
+
+.title-bestseller{
+    display: inline-block;
+   align-self: center;
+}
+
+.title-bestseller p {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 75px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.card {
+    display: flex;
+    width: 20%;
+    align-items: stretch;
+    justify-content: flex-end;
+    padding:50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 15px -3px rgb(36, 35, 35);
+    color: var(--pink2);
+    background-color: var(--shade2); 
+    
+
+}
+
+.price {
+    font-family: 'Nanum Myeongjo', serif;
+    /* position: absolute;
+    bottom:5px;
+    left: 92px;
+    font-weight: 800;
+    font-size: 20px; */
+}
+/* End of Middle Section */
+
+/* Ending Section */
+
+ .quick-appointment {
+     background-color: var(--shade2);
+     display: grid;
+     grid-template-columns: repeat(2, 700px);
+     gap: 20px;
+     grid-auto-rows: minmax(200px, auto);
+     align-items: center;
+     padding-bottom: 50px;
+ }
+
+ .quick-appointment h2 {
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center; 
+    color: var(--pink1);
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+
+ .appointment-info {
+     grid-row-start: 2;
+     grid-row-end: 4;
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 30px;
+     letter-spacing: 2px;
+ }
+
+ .datepicker {
+    grid-row-start: 2;
+    grid-row-end: 4;
+ }
+/* End of Ending Section */
+
+/* Footer Section */
+.footer {
+background-color: var(--pink1);
+display: flex;
+justify-content: space-around;
+
+}
+
+.footer address {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    padding: 30px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 35px;
+    color: var(--shade2);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 40px;
+}
+
+.icons li {
+    list-style-type: none;
+}
+
+.icons a {
+    color:var(--shade2);
+}
+
+/* End of Footer Section */
